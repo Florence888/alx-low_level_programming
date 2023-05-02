@@ -10,15 +10,15 @@ void rev_string(char *s)
 {
 	char rev = s[0];
 	int counter = 0;
-	int b;
+	int i;
 
 	while (s[counter] != '\0')
 	counter++;
-	for (n = 0; b < counter; b++)
+	for (n = 0; i < counter; i++)
 	{
 		counter--;
-		rev = s[b];
-		s[b] = s[counter];
+		rev = s[i];
+	s[i] = s[counter];
 		s[counter] = rev;
 	}
 }
